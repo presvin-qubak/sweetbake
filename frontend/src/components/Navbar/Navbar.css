@@ -1,0 +1,841 @@
+/* =========================================
+   SWEETBAKE NAVBAR
+========================================= */
+
+:root {
+  --cream: #fff8f0;
+  --pink: #f8b4c4;
+  --dark-pink: #d96c8a;
+  --dark-pink-hover: #c95777;
+  --chocolate: #5c3a2e;
+  --gold: #d4a24c;
+  --white: #ffffff;
+  --light-border: rgba(92, 58, 46, 0.1);
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+
+  background: linear-gradient(
+    135deg,
+    #f8b4c4 0%,
+    #d4a24c 100%
+  );
+
+  border-bottom: 1px solid var(--light-border);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+
+/* =========================================
+   NAV CONTAINER
+========================================= */
+
+.nav-container {
+  width: 100%;
+  max-width: 1250px;
+
+  min-height: 72px;
+
+  margin: 0 auto;
+
+  padding: 14px 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color: var(--chocolate);
+
+  text-decoration: none;
+
+  font-size: 25px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  white-space: nowrap;
+
+  flex-shrink: 0;
+}
+
+.logo > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon {
+  color: var(--dark-pink);
+
+  font-size: 30px;
+
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: var(--chocolate);
+}
+
+.logo:hover .logo-icon {
+  color: var(--dark-pink-hover);
+}
+
+.logo > span > span {
+  color: var(--dark-pink);
+}
+
+
+/* =========================================
+   DESKTOP NAVIGATION
+========================================= */
+
+.nav-menu {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 26px;
+
+  flex: 1;
+
+  min-width: 0;
+}
+
+.nav-menu > div {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu a {
+  position: relative;
+
+  display: inline-block;
+
+  padding: 8px 0;
+
+  color: var(--chocolate);
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.nav-menu a:hover {
+  color: var(--dark-pink);
+}
+
+.nav-menu a.active {
+  color: var(--dark-pink);
+}
+
+
+/* =========================================
+   ACTIVE UNDERLINE
+========================================= */
+
+.nav-menu a.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -2px;
+
+  width: 100%;
+  height: 2px;
+
+  border-radius: 10px;
+
+  background: var(--dark-pink);
+
+  transform-origin: center;
+
+  animation: underlineIn 0.25s ease;
+}
+
+@keyframes underlineIn {
+  from {
+    width: 0;
+    left: 50%;
+  }
+
+  to {
+    width: 100%;
+    left: 0;
+  }
+}
+
+
+/* =========================================
+   RIGHT ACTIONS
+========================================= */
+
+.nav-actions {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 7px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   ICON BUTTON
+========================================= */
+
+.icon-btn {
+  position: relative;
+
+  width: 38px;
+  height: 38px;
+
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: var(--chocolate);
+
+  font-size: 17px;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  flex-shrink: 0;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+.icon-btn:hover {
+  color: var(--dark-pink);
+
+  background: rgba(248, 180, 196, 0.16);
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: 3px;
+
+  flex-shrink: 0;
+}
+
+.search-input {
+  width: 180px;
+  height: 36px;
+
+  padding: 8px 14px;
+
+  border: 1px solid var(--pink);
+
+  border-radius: 20px;
+
+  outline: none;
+
+  background: var(--white);
+
+  color: var(--chocolate);
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  box-shadow:
+    0 4px 15px rgba(92, 58, 46, 0.05);
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.search-input::placeholder {
+  color: #a88d84;
+}
+
+.search-input:focus {
+  border-color: var(--dark-pink);
+
+  box-shadow:
+    0 0 0 3px rgba(217, 108, 138, 0.1);
+}
+
+
+/* =========================================
+   WISHLIST
+========================================= */
+
+.wishlist-icon {
+  position: relative;
+}
+
+.wishlist-count {
+  position: absolute;
+
+  top: -2px;
+  right: -2px;
+
+  min-width: 17px;
+  height: 17px;
+
+  padding: 0 4px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--dark-pink);
+
+  color: var(--white);
+
+  font-size: 9px;
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   CART
+========================================= */
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+
+  top: -2px;
+  right: -2px;
+
+  min-width: 17px;
+  height: 17px;
+
+  padding: 0 4px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--dark-pink);
+
+  color: var(--white);
+
+  font-size: 9px;
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   USER
+========================================= */
+
+.user-btn {
+  cursor: pointer;
+}
+
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.menu-btn {
+  display: none;
+
+  width: 38px;
+  height: 38px;
+
+  padding: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: var(--chocolate);
+
+  font-size: 21px;
+
+  cursor: pointer;
+
+  flex-shrink: 0;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+.menu-btn:hover {
+  color: var(--dark-pink);
+
+  background: rgba(248, 180, 196, 0.16);
+}
+
+
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+.mobile-menu {
+  width: 100%;
+
+  padding: 18px 25px 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 4px;
+
+  background: var(--cream);
+
+  border-top: 1px solid rgba(92, 58, 46, 0.07);
+
+  box-shadow:
+    0 12px 30px rgba(60, 30, 20, 0.1);
+
+  overflow: hidden;
+}
+
+.mobile-menu a {
+  width: 100%;
+  max-width: 400px;
+
+  padding: 13px 18px;
+
+  border-radius: 10px;
+
+  color: var(--chocolate);
+
+  text-align: center;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mobile-menu a:hover {
+  color: var(--dark-pink);
+
+  background: rgba(248, 180, 196, 0.14);
+
+  transform: translateX(4px);
+}
+
+.mobile-menu a.active {
+  color: var(--dark-pink);
+
+  background: rgba(248, 180, 196, 0.16);
+}
+
+
+/* =========================================
+   LAPTOP
+   992px - 1199px
+========================================= */
+
+@media (max-width: 1199px) {
+
+  .nav-container {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    gap: 18px;
+  }
+
+  .nav-menu {
+    gap: 18px;
+  }
+
+  .nav-menu a {
+    font-size: 13px;
+  }
+
+  .search-input {
+    width: 150px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+   768px - 991px
+========================================= */
+
+@media (max-width: 991px) {
+
+  .nav-container {
+    min-height: 68px;
+
+    padding: 12px 18px;
+
+    gap: 12px;
+  }
+
+  /* Hide desktop navigation */
+
+  .nav-menu {
+    display: none;
+  }
+
+  /* Show hamburger */
+
+  .menu-btn {
+    display: flex;
+  }
+
+  /* Tablet search */
+
+  .search-wrapper {
+    position: relative;
+  }
+
+  .search-input {
+    position: absolute;
+
+    top: calc(100% + 10px);
+    right: 0;
+
+    width: 240px;
+    height: 40px;
+
+    z-index: 1002;
+
+    box-shadow:
+      0 8px 25px rgba(60, 30, 20, 0.15);
+  }
+
+  /* Mobile menu */
+
+  .mobile-menu {
+    position: relative;
+
+    z-index: 1001;
+
+    padding: 18px 20px 24px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   480px - 767px
+========================================= */
+
+@media (max-width: 767px) {
+
+  .nav-container {
+    min-height: 64px;
+
+    padding: 11px 16px;
+
+    gap: 6px;
+  }
+
+  .logo {
+    font-size: 22px;
+
+    gap: 7px;
+  }
+
+  .logo-icon {
+    font-size: 26px;
+  }
+
+  .nav-actions {
+    gap: 2px;
+  }
+
+  .icon-btn {
+    width: 36px;
+    height: 36px;
+
+    font-size: 16px;
+  }
+
+  .menu-btn {
+    width: 36px;
+    height: 36px;
+
+    font-size: 20px;
+  }
+
+  /* Responsive search */
+
+  .search-input {
+    right: 0;
+
+    width: min(
+      240px,
+      calc(100vw - 30px)
+    );
+
+    height: 40px;
+  }
+
+  /* Mobile menu */
+
+  .mobile-menu {
+    padding: 16px 15px 22px;
+  }
+
+  .mobile-menu a {
+    max-width: 100%;
+
+    padding: 12px 16px;
+
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   360px - 479px
+========================================= */
+
+@media (max-width: 479px) {
+
+  .nav-container {
+    padding: 10px 12px;
+  }
+
+  .logo {
+    font-size: 20px;
+
+    gap: 6px;
+  }
+
+  .logo-icon {
+    font-size: 24px;
+  }
+
+  .nav-actions {
+    gap: 0;
+  }
+
+  .icon-btn {
+    width: 34px;
+    height: 34px;
+
+    font-size: 15px;
+  }
+
+  .menu-btn {
+    width: 34px;
+    height: 34px;
+
+    font-size: 19px;
+  }
+
+  /* Smaller search */
+
+  .search-input {
+    right: 0;
+
+    width: calc(100vw - 24px);
+
+    max-width: 230px;
+  }
+
+  .mobile-menu {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+   Below 360px
+========================================= */
+
+@media (max-width: 359px) {
+
+  .nav-container {
+    padding: 9px 10px;
+  }
+
+  .logo {
+    font-size: 18px;
+
+    gap: 5px;
+  }
+
+  .logo-icon {
+    font-size: 21px;
+  }
+
+  .icon-btn {
+    width: 31px;
+    height: 31px;
+
+    font-size: 14px;
+  }
+
+  .menu-btn {
+    width: 31px;
+    height: 31px;
+
+    font-size: 18px;
+  }
+
+  /* Hide wishlist only on extremely small screens */
+
+  .wishlist-icon {
+    display: none;
+  }
+
+  /* Very small search */
+
+  .search-input {
+    right: 0;
+
+    width: calc(100vw - 20px);
+
+    max-width: 200px;
+  }
+
+  .mobile-menu {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .mobile-menu a {
+    padding: 11px 12px;
+
+    font-size: 14px;
+  }
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+.icon-btn:focus-visible,
+.menu-btn:focus-visible,
+.mobile-menu a:focus-visible,
+.logo:focus-visible,
+.search-input:focus-visible {
+  outline: 2px solid var(--dark-pink);
+
+  outline-offset: 3px;
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .navbar *,
+  .navbar *::before,
+  .navbar *::after {
+
+    animation-duration: 0.01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+  }
+}

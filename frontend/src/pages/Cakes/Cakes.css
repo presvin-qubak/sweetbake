@@ -1,0 +1,773 @@
+/* =========================================
+   SWEETBAKE CAKES PAGE
+========================================= */
+
+.cakes-page {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 70px 25px;
+
+  background: #fff8f0;
+
+  color: #5c3a2e;
+
+  overflow-x: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.cakes-header {
+  width: 100%;
+  max-width: 700px;
+
+  margin: 0 auto 35px;
+
+  text-align: center;
+}
+
+.cakes-header p:first-child {
+  display: inline-block;
+
+  margin: 0;
+
+  color: #d96c8a;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  line-height: 1.5;
+}
+
+.cakes-header h1 {
+  margin: 10px 0;
+
+  color: #5c3a2e;
+
+  font-size: 48px;
+
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  overflow-wrap: break-word;
+}
+
+.cakes-header h1 span {
+  color: #d96c8a;
+}
+
+.cakes-header p:last-child {
+  margin: 0;
+
+  color: #80675d;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.cake-filters {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin: 0 auto 45px;
+}
+
+.cake-filters button {
+  min-height: 40px;
+
+  border: 1px solid #f0cbd4;
+
+  background: #ffffff;
+
+  color: #5c3a2e;
+
+  padding: 10px 20px;
+
+  border-radius: 25px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.cake-filters button:hover {
+  background: #fff0f4;
+
+  color: #d96c8a;
+
+  border-color: #d96c8a;
+
+  transform: translateY(-2px);
+}
+
+.cake-filters button.active {
+  background: #d96c8a;
+
+  color: #ffffff;
+
+  border-color: #d96c8a;
+
+  box-shadow:
+    0 6px 15px rgba(217, 108, 138, 0.2);
+}
+
+
+/* =========================================
+   CAKES GRID
+========================================= */
+
+.cakes-grid {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 25px;
+}
+
+
+/* =========================================
+   CAKE PRODUCT CARD
+========================================= */
+
+.cake-product {
+  min-width: 0;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 30px rgba(92, 58, 46, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cake-product:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 18px 40px rgba(92, 58, 46, 0.15);
+}
+
+
+/* =========================================
+   CAKE IMAGE
+========================================= */
+
+.cake-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 250px;
+
+  overflow: hidden;
+
+  background: #f8eee8;
+}
+
+.cake-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.cake-product:hover .cake-image img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================
+   WISHLIST BUTTON
+========================================= */
+
+.wishlist-btn {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #d96c8a;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.1);
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.wishlist-btn:hover {
+  background: #d96c8a;
+
+  color: #ffffff;
+
+  transform: scale(1.05);
+}
+
+
+/* =========================================
+   PRODUCT INFO
+========================================= */
+
+.cake-product-info {
+  min-width: 0;
+
+  padding: 20px;
+}
+
+.cake-category {
+  display: inline-block;
+
+  color: #d96c8a;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  line-height: 1.4;
+}
+
+.cake-product-info h2 {
+  margin: 7px 0;
+
+  color: #5c3a2e;
+
+  font-size: 21px;
+
+  line-height: 1.35;
+
+  font-weight: 700;
+
+  overflow-wrap: break-word;
+}
+
+
+/* =========================================
+   RATING
+========================================= */
+
+.rating {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #d4a24c;
+
+  font-size: 14px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   PRODUCT BOTTOM
+========================================= */
+
+.cake-product-bottom {
+  margin-top: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 12px;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.price {
+  min-width: 0;
+
+  color: #5c3a2e;
+
+  font-size: 21px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================
+   ADD CART BUTTON
+========================================= */
+
+.add-cart {
+  flex-shrink: 0;
+
+  min-height: 40px;
+
+  border: none;
+
+  background: #d96c8a;
+
+  color: #ffffff;
+
+  padding: 10px 15px;
+
+  border-radius: 20px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.add-cart:hover {
+  background: #c45877;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 18px rgba(217, 108, 138, 0.2);
+}
+
+
+/* =========================================
+   LAPTOP
+   992px - 1199px
+========================================= */
+
+@media (max-width: 1199px) {
+
+  .cakes-page {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .cakes-grid {
+    gap: 20px;
+  }
+
+  .cake-image {
+    height: 235px;
+  }
+
+  .cake-product-info {
+    padding: 18px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+   768px - 991px
+========================================= */
+
+@media (max-width: 991px) {
+
+  .cakes-page {
+    padding: 60px 20px;
+  }
+
+  .cakes-header {
+    margin-bottom: 30px;
+  }
+
+  .cakes-header h1 {
+    font-size: 42px;
+  }
+
+  .cakes-header p:last-child {
+    font-size: 14px;
+  }
+
+  .cake-filters {
+    margin-bottom: 35px;
+
+    gap: 10px;
+  }
+
+  .cake-filters button {
+    padding: 9px 17px;
+  }
+
+  .cakes-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+  }
+
+  .cake-image {
+    height: 240px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   480px - 767px
+========================================= */
+
+@media (max-width: 767px) {
+
+  .cakes-page {
+    padding: 50px 18px;
+  }
+
+  .cakes-header {
+    margin-bottom: 28px;
+  }
+
+  .cakes-header p:first-child {
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .cakes-header h1 {
+    margin: 8px 0 12px;
+
+    font-size: 36px;
+  }
+
+  .cakes-header p:last-child {
+    font-size: 14px;
+
+    line-height: 1.65;
+  }
+
+  .cake-filters {
+    gap: 8px;
+
+    margin-bottom: 30px;
+  }
+
+  .cake-filters button {
+    min-height: 38px;
+
+    padding: 8px 15px;
+
+    font-size: 12px;
+  }
+
+  .cakes-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .cake-image {
+    height: 280px;
+  }
+
+  .cake-product-info {
+    padding: 18px;
+  }
+
+  .cake-product-info h2 {
+    font-size: 20px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .add-cart {
+    padding: 10px 14px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   360px - 479px
+========================================= */
+
+@media (max-width: 479px) {
+
+  .cakes-page {
+    padding: 45px 15px;
+  }
+
+  .cakes-header h1 {
+    font-size: 31px;
+  }
+
+  .cakes-header p:last-child {
+    font-size: 13px;
+  }
+
+  .cake-filters {
+    gap: 7px;
+
+    margin-bottom: 27px;
+  }
+
+  .cake-filters button {
+    min-height: 36px;
+
+    padding: 8px 13px;
+
+    font-size: 11.5px;
+  }
+
+  .cakes-grid {
+    gap: 17px;
+  }
+
+  .cake-product {
+    border-radius: 17px;
+  }
+
+  .cake-image {
+    height: 250px;
+  }
+
+  .wishlist-btn {
+    top: 12px;
+    right: 12px;
+
+    width: 37px;
+    height: 37px;
+
+    font-size: 15px;
+  }
+
+  .cake-product-info {
+    padding: 16px;
+  }
+
+  .cake-category {
+    font-size: 11px;
+  }
+
+  .cake-product-info h2 {
+    font-size: 18px;
+  }
+
+  .rating {
+    font-size: 13px;
+  }
+
+  .cake-product-bottom {
+    margin-top: 15px;
+
+    gap: 8px;
+  }
+
+  .price {
+    font-size: 19px;
+  }
+
+  .add-cart {
+    min-height: 38px;
+
+    padding: 9px 12px;
+
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+   Below 360px
+========================================= */
+
+@media (max-width: 359px) {
+
+  .cakes-page {
+    padding: 40px 12px;
+  }
+
+  .cakes-header p:first-child {
+    font-size: 11px;
+
+    letter-spacing: 1.2px;
+  }
+
+  .cakes-header h1 {
+    font-size: 27px;
+
+    line-height: 1.2;
+  }
+
+  .cakes-header p:last-child {
+    font-size: 12px;
+
+    line-height: 1.6;
+  }
+
+  .cake-filters {
+    gap: 6px;
+  }
+
+  .cake-filters button {
+    min-height: 34px;
+
+    padding: 7px 11px;
+
+    font-size: 11px;
+  }
+
+  .cake-image {
+    height: 220px;
+  }
+
+  .cake-product-info {
+    padding: 14px;
+  }
+
+  .cake-category {
+    font-size: 10px;
+  }
+
+  .cake-product-info h2 {
+    font-size: 17px;
+  }
+
+  .rating {
+    font-size: 12px;
+
+    gap: 5px;
+  }
+
+  .cake-product-bottom {
+    flex-wrap: wrap;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .add-cart {
+    min-height: 36px;
+
+    padding: 8px 11px;
+
+    font-size: 11px;
+  }
+
+  .wishlist-btn {
+    width: 35px;
+    height: 35px;
+
+    top: 10px;
+    right: 10px;
+  }
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+.cakes-page button:focus-visible {
+  outline: 2px solid #d96c8a;
+
+  outline-offset: 3px;
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .cakes-page *,
+  .cakes-page *::before,
+  .cakes-page *::after {
+
+    animation-duration: 0.01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+  }
+}

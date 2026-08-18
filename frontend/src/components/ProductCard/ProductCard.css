@@ -1,0 +1,443 @@
+/* =========================================
+   PRODUCT CARD
+========================================= */
+
+.product-card {
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #f3dfd0;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 8px 25px rgba(74, 37, 17, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 15px 35px rgba(74, 37, 17, 0.15);
+}
+
+
+/* =========================================
+   PRODUCT IMAGE
+========================================= */
+
+.product-image-wrapper {
+  position: relative;
+
+  width: 100%;
+  height: 240px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #fff7ef;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.45s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.06);
+}
+
+
+/* =========================================
+   SALE BADGE
+========================================= */
+
+.product-sale {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  z-index: 5;
+
+  padding: 6px 11px;
+
+  border-radius: 20px;
+
+  background: #e85d75;
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+
+  box-shadow:
+    0 4px 12px rgba(232, 93, 117, 0.25);
+}
+
+
+/* =========================================
+   WISHLIST BUTTON
+========================================= */
+
+.wishlist-btn {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  z-index: 5;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #7c6254;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.12);
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.wishlist-btn:hover {
+  color: #e85d75;
+
+  background: #fff0f3;
+
+  transform: scale(1.1);
+
+  box-shadow:
+    0 6px 16px rgba(232, 93, 117, 0.2);
+}
+
+.wishlist-btn:active {
+  transform: scale(0.95);
+}
+
+
+/* =========================================
+   PRODUCT INFORMATION
+========================================= */
+
+.product-info {
+  padding: 20px;
+}
+
+
+/* =========================================
+   CATEGORY
+========================================= */
+
+.product-category {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #d96c8a;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.8px;
+}
+
+
+/* =========================================
+   PRODUCT NAME
+========================================= */
+.product-name {
+  min-height: 46px;
+
+  margin: 6px 0 12px;
+
+  color: #5c3a2e;
+
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.35;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.product-price {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 17px;
+}
+
+.current-price {
+  color: #5c3a2e;
+
+  font-size: 21px;
+
+  font-weight: 800;
+}
+
+.old-price {
+  color: #9ca3af;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  text-decoration: line-through;
+}
+
+
+/* =========================================
+   ADD TO CART
+========================================= */
+
+.add-cart-btn {
+  width: 100%;
+
+  min-height: 44px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 12px 15px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #5c3a2e;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.add-cart-btn:hover {
+  background: #d96c8a;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(217, 108, 138, 0.25);
+}
+
+.add-cart-btn:active {
+  transform: scale(0.97);
+
+  box-shadow: none;
+}
+
+
+/* =========================================
+   CART ICON
+========================================= */
+
+.add-cart-btn svg {
+  font-size: 14px;
+
+  transition: transform 0.25s ease;
+}
+
+.add-cart-btn:hover svg {
+  transform: translateX(-2px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .product-image-wrapper {
+    height: 220px;
+  }
+
+  .product-info {
+    padding: 18px;
+  }
+
+  .product-name {
+    font-size: 18px;
+  }
+
+  .current-price {
+    font-size: 20px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .product-card {
+    border-radius: 15px;
+  }
+
+  .product-image-wrapper {
+    height: 210px;
+  }
+
+  .product-sale {
+    top: 12px;
+    left: 12px;
+
+    padding: 5px 9px;
+
+    font-size: 10px;
+  }
+
+  .wishlist-btn {
+    top: 12px;
+    right: 12px;
+
+    width: 36px;
+    height: 36px;
+
+    font-size: 14px;
+  }
+
+  .product-info {
+    padding: 16px;
+  }
+
+  .product-category {
+    font-size: 10px;
+  }
+
+  .product-name {
+    min-height: 42px;
+
+    margin: 5px 0 10px;
+
+    font-size: 17px;
+  }
+
+  .product-price {
+    gap: 8px;
+
+    margin-bottom: 14px;
+  }
+
+  .current-price {
+    font-size: 19px;
+  }
+
+  .old-price {
+    font-size: 13px;
+  }
+
+  .add-cart-btn {
+    min-height: 42px;
+
+    padding: 11px;
+
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .product-image-wrapper {
+    height: 190px;
+  }
+
+  .product-info {
+    padding: 14px;
+  }
+
+  .product-name {
+    font-size: 16px;
+  }
+
+  .current-price {
+    font-size: 18px;
+  }
+
+  .add-cart-btn {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+.wishlist-btn:focus-visible,
+.add-cart-btn:focus-visible {
+  outline: 2px solid #e85d75;
+
+  outline-offset: 3px;
+}

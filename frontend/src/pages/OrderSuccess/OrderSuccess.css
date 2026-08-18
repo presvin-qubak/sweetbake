@@ -1,0 +1,572 @@
+/* =================================
+   SUCCESS PAGE
+================================= */
+
+.success-page {
+  min-height: 100vh;
+  padding: 60px 20px 80px;
+
+  background: #fff8f5;
+  color: #351b1b;
+}
+
+.success-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =================================
+   SUCCESS HEADER
+================================= */
+
+.success-header {
+  text-align: center;
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  background: #fff0f3;
+  color: #e85d75;
+
+  font-size: 55px;
+
+  box-shadow: 0 8px 25px rgba(232, 93, 117, 0.1);
+}
+
+.success-header h1 {
+  margin: 10px 0;
+
+  color: #351b1b;
+
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.success-header p {
+  margin: 8px 0;
+
+  color: #555;
+
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.success-header span {
+  color: #999;
+  font-size: 14px;
+}
+
+/* =================================
+   ORDER ID
+================================= */
+
+.order-id-card {
+  max-width: 400px;
+
+  margin: 35px auto;
+  padding: 18px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border-radius: 15px;
+
+  box-shadow: 0 10px 30px rgba(80, 30, 30, 0.08);
+}
+
+.order-id-card p {
+  margin: 0;
+
+  color: #999;
+
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.order-id-card h2 {
+  margin: 7px 0 0;
+
+  color: #e85d75;
+
+  font-size: 22px;
+}
+
+/* =================================
+   MAIN LAYOUT
+================================= */
+
+.success-layout {
+  display: grid;
+
+  grid-template-columns: 1.5fr 1fr;
+
+  gap: 25px;
+
+  align-items: start;
+}
+
+.success-left {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* =================================
+   CARDS
+================================= */
+
+.success-card,
+.success-summary {
+  padding: 25px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(80, 30, 30, 0.07);
+}
+
+/* =================================
+   CARD TITLE
+================================= */
+
+.success-card-title {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.success-card-title svg {
+  color: #e85d75;
+  font-size: 21px;
+  flex-shrink: 0;
+}
+
+.success-card-title h2 {
+  margin: 0;
+
+  color: #351b1b;
+
+  font-size: 20px;
+}
+
+/* =================================
+   ADDRESS
+================================= */
+
+.address-details {
+  padding-left: 33px;
+}
+
+.address-details strong {
+  color: #351b1b;
+}
+
+.address-details p {
+  margin: 7px 0;
+
+  color: #777;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =================================
+   SUCCESS ITEMS
+================================= */
+
+.success-items {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.success-item {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #eee;
+}
+
+.success-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.success-item img {
+  width: 65px;
+  height: 65px;
+
+  flex-shrink: 0;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+.success-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.success-item-info h3 {
+  margin: 0 0 5px;
+
+  color: #351b1b;
+
+  font-size: 15px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.success-item-info p {
+  margin: 0;
+
+  color: #999;
+
+  font-size: 13px;
+}
+
+.success-item > strong {
+  color: #351b1b;
+  white-space: nowrap;
+}
+
+/* =================================
+   SUMMARY
+================================= */
+
+.success-summary {
+  position: sticky;
+  top: 100px;
+}
+
+.success-summary h2 {
+  margin: 0 0 20px;
+
+  color: #351b1b;
+
+  font-size: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+
+  margin: 15px 0;
+
+  color: #666;
+}
+
+.summary-row strong {
+  color: #351b1b;
+}
+
+.summary-divider {
+  height: 1px;
+
+  margin: 20px 0;
+
+  background: #eee;
+}
+
+/* =================================
+   TOTAL
+================================= */
+
+.success-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.success-total span {
+  color: #351b1b;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.success-total strong {
+  color: #e85d75;
+
+  font-size: 25px;
+}
+
+/* =================================
+   PAYMENT INFO
+================================= */
+
+.payment-info {
+  margin-top: 25px;
+  padding: 15px;
+
+  background: #fff8f5;
+
+  border-radius: 10px;
+}
+
+.payment-info p {
+  margin: 0 0 5px;
+
+  color: #999;
+
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.payment-info strong {
+  color: #351b1b;
+}
+
+/* =================================
+   DELIVERY TIME
+================================= */
+
+.delivery-time {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  margin-top: 15px;
+  padding: 15px;
+
+  background: #fff0f3;
+
+  border-radius: 10px;
+}
+
+.delivery-time span {
+  color: #777;
+  font-size: 13px;
+}
+
+.delivery-time strong {
+  color: #e85d75;
+}
+
+/* =================================
+   ACTION BUTTONS
+================================= */
+
+.success-actions {
+  display: flex;
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 35px;
+}
+
+.success-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 14px 24px;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.success-actions button:hover {
+  transform: translateY(-2px);
+}
+
+/* Home Button */
+
+.home-btn {
+  border: none;
+
+  background: #e85d75;
+  color: #ffffff;
+
+  box-shadow: 0 8px 20px rgba(232, 93, 117, 0.18);
+}
+
+.home-btn:hover {
+  background: #d94762;
+}
+
+/* Cakes Button */
+
+.cakes-btn {
+  background: #ffffff;
+  color: #e85d75;
+
+  border: 1px solid #e85d75;
+}
+
+.cakes-btn:hover {
+  background: #fff0f3;
+}
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+  .success-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .success-summary {
+    position: static;
+  }
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+  .success-page {
+    padding: 40px 15px 60px;
+  }
+
+  .success-header h1 {
+    font-size: 28px;
+  }
+
+  .success-header p {
+    font-size: 15px;
+  }
+
+  .success-icon {
+    width: 70px;
+    height: 70px;
+
+    font-size: 45px;
+  }
+
+  .order-id-card {
+    margin: 25px auto;
+  }
+
+  .success-card,
+  .success-summary {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .success-card-title h2 {
+    font-size: 18px;
+  }
+
+  .address-details {
+    padding-left: 0;
+  }
+
+  .success-item img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .success-item-info h3 {
+    font-size: 14px;
+  }
+
+  .success-item > strong {
+    font-size: 13px;
+  }
+
+  .success-actions {
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 25px;
+  }
+
+  .success-actions button {
+    width: 100%;
+  }
+}
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 400px) {
+  .success-page {
+    padding: 30px 12px 50px;
+  }
+
+  .success-header h1 {
+    font-size: 25px;
+  }
+
+  .order-id-card h2 {
+    font-size: 19px;
+  }
+
+  .success-card,
+  .success-summary {
+    padding: 17px;
+  }
+
+  .success-item {
+    gap: 10px;
+  }
+
+  .success-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .success-item > strong {
+    font-size: 12px;
+  }
+
+  .summary-row {
+    font-size: 14px;
+  }
+
+  .success-total span {
+    font-size: 15px;
+  }
+
+  .success-total strong {
+    font-size: 21px;
+  }
+}

@@ -1,0 +1,753 @@
+/* =========================================
+   COOKIES PAGE
+========================================= */
+
+.cookies-page {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 70px 25px;
+
+  background: #fff8f0;
+  color: #5c3a2e;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.cookies-header {
+  width: 100%;
+  max-width: 700px;
+
+  margin: 0 auto 35px;
+
+  text-align: center;
+}
+
+.cookies-header p:first-child {
+  display: inline-block;
+
+  margin: 0;
+
+  color: #d96c8a;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.cookies-header h1 {
+  margin: 10px 0;
+
+  color: #5c3a2e;
+
+  font-size: 48px;
+  line-height: 1.15;
+
+  font-weight: 800;
+}
+
+.cookies-header h1 span {
+  color: #d96c8a;
+}
+
+.cookies-header p:last-child {
+  margin: 0;
+
+  color: #80675d;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.cookie-filters {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 45px;
+}
+
+.cookie-filters button {
+  flex-shrink: 0;
+
+  padding: 10px 20px;
+
+  border: 1px solid #f0cbd4;
+  border-radius: 25px;
+
+  background: #ffffff;
+
+  color: #5c3a2e;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.cookie-filters button:hover {
+  transform: translateY(-2px);
+}
+
+.cookie-filters button:hover,
+.cookie-filters button.active {
+  background: #d96c8a;
+
+  color: #ffffff;
+
+  border-color: #d96c8a;
+}
+
+/* =========================================
+   COOKIES GRID
+========================================= */
+
+.cookies-grid {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  gap: 25px;
+}
+
+/* =========================================
+   COOKIE CARD
+========================================= */
+
+.cookie-card {
+  min-width: 0;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 30px rgba(92, 58, 46, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cookie-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 18px 40px rgba(92, 58, 46, 0.15);
+}
+
+/* =========================================
+   COOKIE IMAGE
+========================================= */
+
+.cookie-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 250px;
+
+  overflow: hidden;
+
+  background: #f9eee8;
+}
+
+.cookie-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.cookie-card:hover .cookie-image img {
+  transform: scale(1.04);
+}
+
+/* =========================================
+   WISHLIST BUTTON
+========================================= */
+
+.cookie-wishlist {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #d96c8a;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.1);
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.cookie-wishlist:hover {
+  background: #d96c8a;
+
+  color: #ffffff;
+
+  transform: scale(1.05);
+}
+
+.cookie-wishlist.liked {
+  background: #d96c8a;
+
+  color: #ffffff;
+}
+
+/* =========================================
+   COOKIE INFO
+========================================= */
+
+.cookie-info {
+  min-width: 0;
+
+  padding: 20px;
+}
+
+.cookie-category {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #d96c8a;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.cookie-info h2 {
+  margin: 7px 0;
+
+  color: #5c3a2e;
+
+  font-size: 21px;
+  line-height: 1.35;
+
+  font-weight: 700;
+
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   RATING
+========================================= */
+
+.cookie-rating {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  color: #d4a24c;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.cookie-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  margin-top: 18px;
+}
+
+/* =========================================
+   PRICE
+========================================= */
+
+.cookie-price {
+  flex-shrink: 0;
+
+  color: #5c3a2e;
+
+  font-size: 21px;
+  font-weight: 800;
+}
+
+/* =========================================
+   CART BUTTON
+========================================= */
+
+.cookie-cart {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 10px 15px;
+
+  border: none;
+  border-radius: 20px;
+
+  background: #d96c8a;
+
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.cookie-cart:hover {
+  background: #c45877;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 18px rgba(217, 108, 138, 0.2);
+}
+
+.cookie-cart:active {
+  transform: translateY(0);
+}
+
+/* =========================================
+   LARGE LAPTOP
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .cookies-page {
+    padding: 65px 20px;
+  }
+
+  .cookies-grid {
+    gap: 20px;
+  }
+
+  .cookie-info {
+    padding: 18px;
+  }
+
+  .cookie-image {
+    height: 230px;
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .cookies-page {
+    padding: 60px 20px;
+  }
+
+  .cookies-header {
+    margin-bottom: 30px;
+  }
+
+  .cookies-header h1 {
+    font-size: 42px;
+  }
+
+  .cookies-header p:last-child {
+    font-size: 14px;
+  }
+
+  .cookie-filters {
+    margin-bottom: 35px;
+  }
+
+  .cookies-grid {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(0, 1fr);
+
+    gap: 22px;
+  }
+
+  .cookie-image {
+    height: 240px;
+  }
+}
+
+/* =========================================
+   SMALL TABLET / LARGE MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .cookies-page {
+    padding: 50px 18px;
+  }
+
+  .cookies-header h1 {
+    font-size: 38px;
+  }
+
+  .cookies-header p:last-child {
+    font-size: 14px;
+  }
+
+  .cookie-filters {
+    gap: 8px;
+
+    margin-bottom: 30px;
+  }
+
+  .cookie-filters button {
+    padding: 9px 16px;
+
+    font-size: 13px;
+  }
+
+  .cookies-grid {
+    grid-template-columns: 1fr;
+
+    max-width: 550px;
+  }
+
+  .cookie-image {
+    height: 280px;
+  }
+
+  .cookie-info {
+    padding: 20px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .cookies-page {
+    padding: 45px 15px 60px;
+  }
+
+  .cookies-header {
+    margin-bottom: 28px;
+  }
+
+  .cookies-header p:first-child {
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .cookies-header h1 {
+    font-size: 34px;
+
+    margin: 8px 0 12px;
+  }
+
+  .cookies-header p:last-child {
+    font-size: 13px;
+
+    line-height: 1.6;
+  }
+
+  .cookie-filters {
+    gap: 8px;
+
+    margin-bottom: 30px;
+  }
+
+  .cookie-filters button {
+    padding: 8px 14px;
+
+    font-size: 12px;
+  }
+
+  .cookies-grid {
+    gap: 18px;
+  }
+
+  .cookie-card {
+    border-radius: 17px;
+  }
+
+  .cookie-image {
+    height: 250px;
+  }
+
+  .cookie-wishlist {
+    top: 12px;
+    right: 12px;
+
+    width: 38px;
+    height: 38px;
+  }
+
+  .cookie-info {
+    padding: 17px;
+  }
+
+  .cookie-info h2 {
+    font-size: 19px;
+  }
+
+  .cookie-bottom {
+    margin-top: 16px;
+
+    gap: 10px;
+  }
+
+  .cookie-price {
+    font-size: 19px;
+  }
+
+  .cookie-cart {
+    padding: 9px 13px;
+
+    font-size: 12px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .cookies-page {
+    padding: 35px 12px 50px;
+  }
+
+  .cookies-header h1 {
+    font-size: 29px;
+  }
+
+  .cookies-header p:last-child {
+    font-size: 12px;
+  }
+
+  .cookie-filters {
+    gap: 7px;
+  }
+
+  .cookie-filters button {
+    padding: 8px 12px;
+
+    font-size: 11px;
+  }
+
+  .cookies-grid {
+    gap: 16px;
+  }
+
+  .cookie-image {
+    height: 220px;
+  }
+
+  .cookie-wishlist {
+    top: 10px;
+    right: 10px;
+
+    width: 35px;
+    height: 35px;
+
+    font-size: 14px;
+  }
+
+  .cookie-info {
+    padding: 15px;
+  }
+
+  .cookie-category {
+    font-size: 10px;
+  }
+
+  .cookie-info h2 {
+    font-size: 17px;
+  }
+
+  .cookie-rating {
+    font-size: 12px;
+  }
+
+  .cookie-price {
+    font-size: 17px;
+  }
+
+  .cookie-cart {
+    padding: 8px 11px;
+
+    font-size: 11px;
+
+    gap: 5px;
+  }
+}
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 330px) {
+
+  .cookies-page {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .cookies-header h1 {
+    font-size: 25px;
+  }
+
+  .cookies-header p:first-child {
+    font-size: 10px;
+
+    letter-spacing: 1px;
+  }
+
+  .cookies-header p:last-child {
+    font-size: 11px;
+  }
+
+  .cookie-filters {
+    gap: 5px;
+  }
+
+  .cookie-filters button {
+    padding: 7px 10px;
+
+    font-size: 10px;
+  }
+
+  .cookie-image {
+    height: 195px;
+  }
+
+  .cookie-info {
+    padding: 13px;
+  }
+
+  .cookie-info h2 {
+    font-size: 16px;
+  }
+
+  .cookie-bottom {
+    align-items: center;
+
+    gap: 7px;
+  }
+
+  .cookie-price {
+    font-size: 16px;
+  }
+
+  .cookie-cart {
+    padding: 7px 9px;
+
+    font-size: 10px;
+  }
+
+  .cookie-wishlist {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+.cookie-filters button:focus-visible,
+.cookie-wishlist:focus-visible,
+.cookie-cart:focus-visible {
+  outline: 2px solid #d96c8a;
+
+  outline-offset: 3px;
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .cookies-page *,
+  .cookies-page *::before,
+  .cookies-page *::after {
+    animation-duration: 0.01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+  }
+}

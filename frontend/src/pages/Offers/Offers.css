@@ -1,0 +1,282 @@
+/* ================================
+   OFFERS SECTION
+================================ */
+
+.offers-section {
+  padding: 80px 20px;
+  background: #fffaf5;
+}
+
+.offers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================================
+   HEADING
+================================ */
+
+.offers-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.offers-heading span {
+  display: inline-block;
+  color: #d97706;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.offers-heading h2 {
+  margin: 0 0 12px;
+  color: #4a2511;
+  font-size: 38px;
+  font-weight: 800;
+}
+
+.offers-heading p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #7c6254;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ================================
+   OFFERS GRID
+================================ */
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* ================================
+   OFFER CARD
+================================ */
+
+.offer-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 28px;
+
+  background: #ffffff;
+  border: 1px solid #f3dfd0;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(74, 37, 17, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 18px 40px rgba(74, 37, 17, 0.14);
+}
+
+/* ================================
+   ICON
+================================ */
+
+.offer-icon {
+  flex-shrink: 0;
+
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff0df;
+  border-radius: 50%;
+
+  font-size: 32px;
+}
+
+/* ================================
+   CONTENT
+================================ */
+
+.offer-content {
+  flex: 1;
+}
+
+.offer-discount {
+  display: inline-block;
+
+  padding: 5px 10px;
+
+  background: #fef3c7;
+  color: #b45309;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+}
+
+.offer-content h3 {
+  margin: 10px 0 7px;
+
+  color: #4a2511;
+
+  font-size: 21px;
+}
+
+.offer-content p {
+  margin: 0 0 15px;
+
+  color: #806b5f;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ================================
+   COUPON CODE
+================================ */
+
+.offer-code {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  padding: 8px 10px;
+
+  background: #fffaf5;
+
+  border: 1px dashed #d6b49c;
+  border-radius: 8px;
+
+  font-size: 12px;
+  color: #6b5142;
+}
+
+.offer-code strong {
+  color: #b45309;
+  letter-spacing: 0.5px;
+}
+
+/* ================================
+   COPY BUTTON
+================================ */
+
+.offer-code button {
+  border: none;
+
+  background: #4a2511;
+  color: #ffffff;
+
+  padding: 7px 13px;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.offer-code button:hover {
+  background: #7c3f1d;
+}
+
+.offer-code button:active {
+  transform: scale(0.95);
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+  .offers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .offers-heading h2 {
+    font-size: 32px;
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+  .offers-section {
+    padding: 60px 15px;
+  }
+
+  .offers-heading {
+    margin-bottom: 35px;
+  }
+
+  .offers-heading h2 {
+    font-size: 28px;
+  }
+
+  .offers-heading p {
+    font-size: 14px;
+  }
+
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-card {
+    padding: 22px;
+    gap: 15px;
+  }
+
+  .offer-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 27px;
+  }
+
+  .offer-content h3 {
+    font-size: 19px;
+  }
+}
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 400px) {
+  .offer-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .offer-icon {
+    margin-bottom: 5px;
+  }
+
+  .offer-code {
+    flex-wrap: wrap;
+  }
+
+  .offer-code button {
+    width: 100%;
+  }
+}

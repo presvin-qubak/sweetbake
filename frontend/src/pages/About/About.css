@@ -1,0 +1,653 @@
+/* =========================================
+   SWEETBAKE ABOUT PAGE
+========================================= */
+
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #fffaf5;
+
+  color: #4a2511;
+
+  overflow-x: hidden;
+}
+
+
+/* =========================================
+   ABOUT HERO
+========================================= */
+
+.about-hero {
+  width: 100%;
+
+  min-height: 420px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px 25px;
+
+  background:
+    linear-gradient(
+      rgba(74, 37, 17, 0.72),
+      rgba(74, 37, 17, 0.72)
+    ),
+    url("/images/bakery.jpg") center/cover no-repeat;
+
+  text-align: center;
+}
+
+.about-hero-content {
+  width: 100%;
+  max-width: 750px;
+
+  margin: 0 auto;
+
+  color: #ffffff;
+}
+
+.about-hero-content span {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #fbbf24;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  line-height: 1.4;
+}
+
+.about-hero-content h1 {
+  margin: 0 0 20px;
+
+  color: #ffffff;
+
+  font-size: 52px;
+  line-height: 1.15;
+  font-weight: 800;
+
+  overflow-wrap: break-word;
+}
+
+.about-hero-content p {
+  width: 100%;
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  color: #f9eee7;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 90px 25px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   STORY
+========================================= */
+
+.about-story {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  gap: 70px;
+
+  align-items: center;
+
+  margin-bottom: 90px;
+}
+
+
+/* =========================================
+   STORY IMAGE
+========================================= */
+
+.about-image {
+  width: 100%;
+
+  overflow: hidden;
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 20px 45px rgba(74, 37, 17, 0.15);
+}
+
+.about-image img {
+  display: block;
+
+  width: 100%;
+  height: 480px;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+
+/* =========================================
+   STORY CONTENT
+========================================= */
+
+.about-content {
+  min-width: 0;
+}
+
+.about-label {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #d97706;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+.about-content h2 {
+  margin: 0 0 20px;
+
+  color: #4a2511;
+
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 800;
+
+  overflow-wrap: break-word;
+}
+
+.about-content p {
+  margin: 0 0 16px;
+
+  color: #806b5f;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.about-features {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+.about-feature {
+  min-width: 0;
+
+  padding: 30px 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #f3dfd0;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow:
+    0 8px 25px rgba(74, 37, 17, 0.06);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-feature:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 15px 35px rgba(74, 37, 17, 0.12);
+}
+
+
+/* =========================================
+   FEATURE ICON
+========================================= */
+
+.feature-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 18px;
+
+  background: #fff0df;
+
+  border-radius: 50%;
+
+  font-size: 30px;
+}
+
+.about-feature h3 {
+  margin: 0 0 10px;
+
+  color: #4a2511;
+
+  font-size: 18px;
+
+  line-height: 1.4;
+}
+
+.about-feature p {
+  margin: 0;
+
+  color: #806b5f;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   LAPTOP
+   992px - 1199px
+========================================= */
+
+@media (max-width: 1199px) {
+
+  .about-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-story {
+    gap: 50px;
+  }
+
+  .about-image img {
+    height: 440px;
+  }
+
+  .about-features {
+    gap: 18px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+   768px - 991px
+========================================= */
+
+@media (max-width: 991px) {
+
+  .about-hero {
+    min-height: 390px;
+
+    padding: 70px 20px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 44px;
+  }
+
+  .about-hero-content p {
+    font-size: 16px;
+  }
+
+  .about-container {
+    padding: 75px 20px;
+  }
+
+  .about-story {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    margin-bottom: 75px;
+  }
+
+  .about-image img {
+    height: 420px;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-content h2 {
+    font-size: 36px;
+  }
+
+  .about-content p {
+    max-width: 750px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-features {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   480px - 767px
+========================================= */
+
+@media (max-width: 767px) {
+
+  .about-hero {
+    min-height: 350px;
+
+    padding: 60px 18px;
+  }
+
+  .about-hero-content span {
+    margin-bottom: 12px;
+
+    font-size: 14px;
+  }
+
+  .about-hero-content h1 {
+    margin-bottom: 16px;
+
+    font-size: 36px;
+
+    line-height: 1.15;
+  }
+
+  .about-hero-content p {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+  .about-container {
+    padding: 60px 18px;
+  }
+
+  .about-story {
+    gap: 35px;
+
+    margin-bottom: 60px;
+  }
+
+  .about-image {
+    border-radius: 20px;
+  }
+
+  .about-image img {
+    height: 320px;
+  }
+
+  .about-content h2 {
+    margin-bottom: 16px;
+
+    font-size: 31px;
+  }
+
+  .about-content p {
+    font-size: 14px;
+
+    line-height: 1.75;
+  }
+
+  .about-label {
+    font-size: 13px;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .about-feature {
+    padding: 26px 20px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   360px - 479px
+========================================= */
+
+@media (max-width: 479px) {
+
+  .about-hero {
+    min-height: 330px;
+
+    padding: 55px 15px;
+  }
+
+  .about-hero-content span {
+    font-size: 13px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 31px;
+  }
+
+  .about-hero-content p {
+    font-size: 13px;
+
+    line-height: 1.65;
+  }
+
+  .about-container {
+    padding: 50px 15px;
+  }
+
+  .about-story {
+    gap: 30px;
+
+    margin-bottom: 50px;
+  }
+
+  .about-image {
+    border-radius: 18px;
+  }
+
+  .about-image img {
+    height: 280px;
+  }
+
+  .about-content h2 {
+    font-size: 28px;
+  }
+
+  .about-content p {
+    font-size: 13px;
+  }
+
+  .about-label {
+    font-size: 12px;
+
+    letter-spacing: 0.8px;
+  }
+
+  .about-feature {
+    padding: 24px 18px;
+  }
+
+  .feature-icon {
+    width: 58px;
+    height: 58px;
+
+    margin-bottom: 15px;
+
+    font-size: 27px;
+  }
+
+  .about-feature h3 {
+    font-size: 17px;
+  }
+
+  .about-feature p {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+   Below 360px
+========================================= */
+
+@media (max-width: 359px) {
+
+  .about-hero {
+    min-height: 310px;
+
+    padding: 50px 12px;
+  }
+
+  .about-hero-content span {
+    font-size: 12px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 27px;
+
+    line-height: 1.2;
+  }
+
+  .about-hero-content p {
+    font-size: 12px;
+
+    line-height: 1.6;
+  }
+
+  .about-container {
+    padding: 45px 12px;
+  }
+
+  .about-story {
+    gap: 25px;
+
+    margin-bottom: 45px;
+  }
+
+  .about-image {
+    border-radius: 16px;
+  }
+
+  .about-image img {
+    height: 240px;
+  }
+
+  .about-content h2 {
+    font-size: 25px;
+  }
+
+  .about-content p {
+    font-size: 12px;
+
+    line-height: 1.7;
+  }
+
+  .about-label {
+    font-size: 11px;
+  }
+
+  .about-feature {
+    padding: 22px 15px;
+
+    border-radius: 15px;
+  }
+
+  .feature-icon {
+    width: 54px;
+    height: 54px;
+
+    font-size: 25px;
+  }
+
+  .about-feature h3 {
+    font-size: 16px;
+  }
+
+  .about-feature p {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+.about-page a:focus-visible,
+.about-page button:focus-visible {
+  outline: 2px solid #d97706;
+
+  outline-offset: 3px;
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .about-page *,
+  .about-page *::before,
+  .about-page *::after {
+
+    animation-duration: 0.01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,961 @@
+/* =========================================
+   HOME PAGE
+========================================= */
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #fff8f0;
+
+  color: #5c3a2e;
+
+  overflow-x: hidden;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 650px;
+
+  margin: 0 auto;
+
+  padding: 70px 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   HERO BACKGROUND VIDEO
+========================================= */
+
+.hero-video {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 0;
+}
+
+
+/* =========================================
+   HERO VIDEO OVERLAY
+========================================= */
+
+.hero-overlay {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.48);
+
+  z-index: 1;
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  max-width: 850px;
+
+  min-width: 0;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* =========================================
+   HERO SMALL TEXT
+========================================= */
+
+.hero-small {
+  margin: 0 0 18px;
+
+  color: #f8b4c4;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   HERO TITLE
+========================================= */
+
+.hero h1 {
+  margin: 0 0 25px;
+
+  color: #ffffff;
+
+  font-size: clamp(42px, 5vw, 58px);
+
+  line-height: 1.1;
+
+  font-weight: 800;
+}
+
+.hero h1 span {
+  color: #f8b4c4;
+}
+
+
+/* =========================================
+   HERO DESCRIPTION
+========================================= */
+
+.hero-description {
+  width: 100%;
+  max-width: 650px;
+
+  margin: 0 0 35px;
+
+  color: #ffffff;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.hero-buttons {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+}
+
+
+.order-btn,
+.shop-btn {
+  min-height: 48px;
+
+  padding: 14px 24px;
+
+  border-radius: 30px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================================
+   ORDER BUTTON
+========================================= */
+
+.order-btn {
+  border: none;
+
+  background: #d96c8a;
+
+  color: #ffffff;
+}
+
+.order-btn:hover {
+  background: #c45877;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px rgba(217, 108, 138, 0.3);
+}
+
+
+/* =========================================
+   SHOP BUTTON
+========================================= */
+
+.shop-btn {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  background: rgba(255, 255, 255, 0.95);
+
+  color: #5c3a2e;
+}
+
+.shop-btn:hover {
+  background: #f8b4c4;
+
+  color: #5c3a2e;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   FEATURED SECTION
+========================================= */
+
+.featured {
+  width: 100%;
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 80px 25px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.section-heading {
+  width: 100%;
+  max-width: 750px;
+
+  margin: 0 auto 45px;
+
+  text-align: center;
+}
+
+.section-heading > p:first-child {
+  margin: 0;
+
+  color: #d96c8a;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  line-height: 1.5;
+}
+
+.section-heading h2 {
+  margin: 10px 0;
+
+  color: #5c3a2e;
+
+  font-size: clamp(30px, 4vw, 38px);
+
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+.section-heading h2 span {
+  color: #d96c8a;
+}
+
+.section-heading p:last-child {
+  margin: 0;
+
+  color: #80675d;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   CAKE GRID
+========================================= */
+
+.cake-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 25px;
+}
+
+
+/* =========================================
+   CAKE CARD
+========================================= */
+
+.cake-card {
+  min-width: 0;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 30px rgba(92, 58, 46, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cake-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 18px 40px rgba(92, 58, 46, 0.15);
+}
+
+
+/* =========================================
+   CAKE IMAGE
+========================================= */
+
+.cake-card img {
+  display: block;
+
+  width: 100%;
+
+  height: 240px;
+
+  object-fit: cover;
+}
+
+
+/* =========================================
+   CAKE INFO
+========================================= */
+
+.cake-info {
+  padding: 20px;
+}
+
+.cake-info h3 {
+  margin: 0 0 8px;
+
+  color: #5c3a2e;
+
+  font-size: 21px;
+
+  line-height: 1.3;
+}
+
+.cake-info p {
+  margin: 0;
+
+  color: #80675d;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   CAKE BOTTOM
+========================================= */
+
+.cake-bottom {
+  margin-top: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.cake-bottom span {
+  color: #d96c8a;
+
+  font-size: 20px;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+.cake-bottom button {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #f8b4c4;
+
+  color: #5c3a2e;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.cake-bottom button:hover {
+  background: #d96c8a;
+
+  color: #ffffff;
+
+  transform: scale(1.05);
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+   1200px+
+========================================= */
+
+@media (min-width: 1200px) {
+
+  .hero {
+    min-height: 700px;
+
+    padding:
+      80px
+      25px;
+  }
+
+  .featured {
+    padding-left: 25px;
+
+    padding-right: 25px;
+  }
+}
+
+
+/* =========================================
+   LAPTOP
+   901px - 1199px
+========================================= */
+
+@media (max-width: 1199px) {
+
+  .hero {
+    min-height: 600px;
+
+    padding:
+      60px
+      25px;
+  }
+
+  .featured {
+    padding:
+      70px
+      25px;
+  }
+
+  .cake-grid {
+    gap: 22px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+   768px - 900px
+========================================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    min-height: 600px;
+
+    padding:
+      60px
+      25px
+      70px;
+
+    text-align: center;
+  }
+
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.52);
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-small {
+    margin-bottom: 15px;
+  }
+
+  .hero h1 {
+    max-width: 700px;
+
+    margin-bottom: 20px;
+
+    font-size: 46px;
+  }
+
+  .hero-description {
+    margin:
+      0
+      auto
+      30px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .featured {
+    padding:
+      65px
+      25px;
+  }
+
+  .cake-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+  }
+
+  .cake-card img {
+    height: 230px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   481px - 767px
+========================================= */
+
+@media (max-width: 767px) {
+
+  .hero {
+    min-height: 650px;
+
+    padding:
+      45px
+      18px
+      55px;
+  }
+
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  .hero-small {
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+
+    line-height: 1.15;
+  }
+
+  .hero-description {
+    font-size: 15px;
+
+    line-height: 1.65;
+
+    margin-bottom: 25px;
+  }
+
+  .hero-buttons {
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .order-btn,
+  .shop-btn {
+    width: min(100%, 300px);
+
+    min-height: 48px;
+  }
+
+  .featured {
+    padding:
+      55px
+      15px;
+  }
+
+  .section-heading {
+    margin-bottom: 35px;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .section-heading p:last-child {
+    font-size: 14px;
+  }
+
+  .cake-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .cake-card img {
+    height: 250px;
+  }
+
+  .cake-info {
+    padding: 18px;
+  }
+
+  .cake-info h3 {
+    font-size: 20px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   381px - 480px
+========================================= */
+
+@media (max-width: 480px) {
+
+  .hero {
+    min-height: 620px;
+
+    padding:
+      40px
+      14px
+      50px;
+  }
+
+  .hero-small {
+    font-size: 11px;
+
+    letter-spacing: 1.2px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+
+    margin-bottom: 17px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+  .featured {
+    padding:
+      45px
+      14px;
+  }
+
+  .section-heading {
+    margin-bottom: 30px;
+  }
+
+  .section-heading > p:first-child {
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .section-heading h2 {
+    font-size: 27px;
+  }
+
+  .section-heading p:last-child {
+    font-size: 13px;
+  }
+
+  .cake-card img {
+    height: 220px;
+  }
+
+  .cake-info {
+    padding: 17px;
+  }
+
+  .cake-info h3 {
+    font-size: 18px;
+  }
+
+  .cake-info p {
+    font-size: 13px;
+  }
+
+  .cake-bottom {
+    margin-top: 15px;
+  }
+
+  .cake-bottom span {
+    font-size: 18px;
+  }
+
+  .cake-bottom button {
+    width: 40px;
+
+    height: 40px;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+   330px - 380px
+========================================= */
+
+@media (max-width: 380px) {
+
+  .hero {
+    min-height: 600px;
+
+    padding:
+      32px
+      11px
+      42px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+  }
+
+  .order-btn,
+  .shop-btn {
+    width: 100%;
+
+    padding:
+      12px
+      18px;
+
+    font-size: 14px;
+  }
+
+  .featured {
+    padding:
+      40px
+      11px;
+  }
+
+  .section-heading h2 {
+    font-size: 25px;
+  }
+
+  .section-heading p:last-child {
+    font-size: 12.5px;
+  }
+
+  .cake-grid {
+    gap: 16px;
+  }
+
+  .cake-card {
+    border-radius: 17px;
+  }
+
+  .cake-card img {
+    height: 200px;
+  }
+
+  .cake-info {
+    padding: 15px;
+  }
+
+  .cake-info h3 {
+    font-size: 17px;
+  }
+
+  .cake-info p {
+    font-size: 12.5px;
+  }
+
+  .cake-bottom span {
+    font-size: 17px;
+  }
+
+  .cake-bottom button {
+    width: 38px;
+
+    height: 38px;
+  }
+}
+
+
+/* =========================================
+   EXTRA SMALL
+   329px and below
+========================================= */
+
+@media (max-width: 329px) {
+
+  .hero {
+    min-height: 580px;
+
+    padding:
+      28px
+      9px
+      35px;
+  }
+
+  .hero-small {
+    font-size: 10px;
+
+    letter-spacing: 1px;
+  }
+
+  .hero h1 {
+    font-size: 27px;
+  }
+
+  .hero-description {
+    font-size: 12px;
+  }
+
+  .featured {
+    padding:
+      35px
+      9px;
+  }
+
+  .section-heading h2 {
+    font-size: 23px;
+  }
+
+  .section-heading p:last-child {
+    font-size: 12px;
+  }
+
+  .cake-card img {
+    height: 185px;
+  }
+
+  .cake-info {
+    padding: 13px;
+  }
+
+  .cake-info h3 {
+    font-size: 16px;
+  }
+
+  .cake-info p {
+    font-size: 12px;
+  }
+
+  .cake-bottom span {
+    font-size: 16px;
+  }
+
+  .cake-bottom button {
+    width: 36px;
+
+    height: 36px;
+  }
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+.hero button:focus-visible,
+.cake-bottom button:focus-visible {
+
+  outline: 2px solid #d96c8a;
+
+  outline-offset: 3px;
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .home *,
+  .home *::before,
+  .home *::after {
+
+    animation: none !important;
+
+    transition: none !important;
+  }
+}

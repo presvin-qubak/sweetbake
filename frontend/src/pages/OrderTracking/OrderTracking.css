@@ -1,0 +1,498 @@
+/* =========================================
+   TRACKING PAGE
+========================================= */
+
+.tracking-page {
+  min-height: 100vh;
+  background: #fff8f5;
+  padding: 50px 20px 80px;
+}
+
+.tracking-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.tracking-back {
+  border: none;
+  background: transparent;
+  color: #e85d75;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 8px 0;
+  transition: 0.2s ease;
+}
+
+.tracking-back:hover {
+  color: #d94762;
+  transform: translateX(-3px);
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.tracking-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tracking-main-icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff0f3;
+  color: #e85d75;
+  font-size: 35px;
+  box-shadow: 0 8px 25px rgba(232, 93, 117, 0.1);
+}
+
+.tracking-header p {
+  margin: 20px 0 5px;
+  color: #e85d75;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.tracking-header h1 {
+  margin: 0 0 8px;
+  color: #351b1b;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.tracking-header span {
+  color: #888;
+  font-size: 14px;
+}
+
+/* =========================================
+   CURRENT STATUS
+========================================= */
+
+.current-status {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #fff0f3;
+  border: 1px solid #f4c5ce;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.status-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #e85d75;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.current-status strong {
+  color: #351b1b;
+  font-size: 17px;
+}
+
+.current-status p {
+  margin: 5px 0 0;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   TRACKING CARD
+========================================= */
+
+.tracking-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(80, 30, 30, 0.07);
+}
+
+.tracking-card h2 {
+  margin: 0;
+  color: #351b1b;
+  font-size: 22px;
+}
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.timeline {
+  position: relative;
+  margin-top: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: #ead9d9;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  min-height: 110px;
+}
+
+.timeline-icon {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2eeee;
+  color: #999;
+  z-index: 2;
+}
+
+/* Completed */
+
+.timeline-item.completed .timeline-icon {
+  background: #e85d75;
+  color: white;
+}
+
+/* Active */
+
+.timeline-item.active .timeline-icon {
+  background: #e85d75;
+  color: white;
+  box-shadow: 0 0 0 6px #fff0f3;
+}
+
+.timeline-content {
+  padding-bottom: 25px;
+  flex: 1;
+}
+
+.timeline-content h3 {
+  margin: 4px 0 6px;
+  color: #351b1b;
+  font-size: 17px;
+}
+
+.timeline-content p {
+  margin: 0 0 7px;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.timeline-content span {
+  color: #999;
+  font-size: 12px;
+}
+
+/* Completed text */
+
+.timeline-item.completed .timeline-content span {
+  color: #e85d75;
+  font-weight: 600;
+}
+
+/* Active text */
+
+.timeline-item.active .timeline-content span {
+  color: #e85d75;
+  font-weight: 700;
+}
+
+/* =========================================
+   ORDER INFORMATION
+========================================= */
+
+.tracking-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.info-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(80, 30, 30, 0.05);
+}
+
+.info-card p {
+  margin: 0 0 7px;
+  color: #999;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.info-card strong {
+  color: #351b1b;
+  font-size: 14px;
+}
+
+/* =========================================
+   DELIVERY ADDRESS
+========================================= */
+
+.delivery-card {
+  margin-top: 25px;
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(80, 30, 30, 0.06);
+}
+
+.delivery-card h2 {
+  margin: 0 0 15px;
+  color: #351b1b;
+}
+
+.delivery-card strong {
+  color: #351b1b;
+}
+
+.delivery-card p {
+  color: #777;
+  margin: 7px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.tracking-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.tracking-buttons button {
+  border: none;
+  padding: 14px 22px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #e85d75;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tracking-buttons button:hover {
+  background: #d94762;
+  transform: translateY(-2px);
+}
+
+.tracking-buttons button:active {
+  transform: translateY(0);
+}
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.tracking-empty {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 50px;
+  background: white;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(80, 30, 30, 0.08);
+}
+
+.tracking-empty-icon {
+  font-size: 50px;
+  color: #e85d75;
+}
+
+.tracking-empty h1 {
+  color: #351b1b;
+  margin-bottom: 10px;
+}
+
+.tracking-empty p {
+  color: #888;
+  line-height: 1.6;
+}
+
+.tracking-empty button {
+  border: none;
+  background: #e85d75;
+  color: white;
+  padding: 13px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.tracking-empty button:hover {
+  background: #d94762;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 700px) {
+  .tracking-page {
+    padding: 35px 15px;
+  }
+
+  .tracking-header h1 {
+    font-size: 28px;
+  }
+
+  .tracking-card {
+    padding: 22px;
+  }
+
+  .tracking-info {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tracking-buttons {
+    flex-direction: column;
+  }
+
+  .tracking-buttons button {
+    justify-content: center;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .tracking-page {
+    padding: 25px 12px 50px;
+  }
+
+  .tracking-header {
+    margin-bottom: 25px;
+  }
+
+  .tracking-main-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 30px;
+  }
+
+  .tracking-header h1 {
+    font-size: 25px;
+  }
+
+  .tracking-header span {
+    font-size: 13px;
+  }
+
+  .current-status {
+    align-items: flex-start;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .status-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+
+  .current-status strong {
+    font-size: 15px;
+  }
+
+  .current-status p {
+    font-size: 13px;
+  }
+
+  .tracking-card {
+    padding: 18px;
+    border-radius: 15px;
+  }
+
+  .tracking-card h2 {
+    font-size: 19px;
+  }
+
+  .timeline {
+    margin-top: 25px;
+  }
+
+  .timeline-item {
+    gap: 14px;
+    min-height: 105px;
+  }
+
+  .timeline-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .timeline::before {
+    left: 19px;
+  }
+
+  .timeline-content h3 {
+    font-size: 15px;
+  }
+
+  .timeline-content p {
+    font-size: 13px;
+  }
+
+  .tracking-info {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card {
+    padding: 16px;
+  }
+
+  .delivery-card {
+    padding: 20px;
+  }
+
+  .tracking-empty {
+    margin: 60px auto;
+    padding: 40px 25px;
+  }
+}

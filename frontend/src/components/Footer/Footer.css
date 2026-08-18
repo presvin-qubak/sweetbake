@@ -1,0 +1,894 @@
+/* =========================================
+   SWEETBAKE FOOTER
+========================================= */
+
+.footer {
+  position: relative;
+
+  width: 100%;
+
+  margin-top: 70px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #351b1b 0%,
+      #4a2428 50%,
+      #351b1b 100%
+    );
+
+  color: #fff;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   FOOTER CONTAINER
+========================================= */
+
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 70px 25px 55px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.5fr
+    1fr
+    1fr
+    1.2fr;
+
+  gap: 50px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   FOOTER COLUMNS
+========================================= */
+
+.footer-column {
+  min-width: 0;
+}
+
+.footer-column h3 {
+  position: relative;
+
+  margin: 0 0 24px;
+
+  color: #fff;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.footer-column h3::after {
+  content: "";
+
+  display: block;
+
+  width: 35px;
+  height: 3px;
+
+  margin-top: 9px;
+
+  border-radius: 10px;
+
+  background: #e85d75;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand {
+  max-width: 330px;
+}
+
+.footer-logo {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 27px;
+  font-weight: 800;
+
+  letter-spacing: -0.5px;
+
+  white-space: nowrap;
+}
+
+.footer-logo > span:first-child {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #e85d75;
+
+  color: #fff;
+
+  font-size: 20px;
+
+  box-shadow:
+    0 7px 20px rgba(232, 93, 117, 0.3);
+}
+
+.footer-logo > span:last-child {
+  color: #fff;
+}
+
+.footer-logo > span:last-child span {
+  color: #e85d75;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.footer-description {
+  margin: 20px 0 25px;
+
+  color: #d7c8ca;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.footer-social {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  flex-wrap: wrap;
+}
+
+.footer-social a {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.footer-social a:hover {
+  background: #e85d75;
+
+  color: #fff;
+
+  box-shadow:
+    0 8px 20px rgba(232, 93, 117, 0.3);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   LISTS
+========================================= */
+
+.footer-column ul {
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-column li {
+  margin-bottom: 13px;
+}
+
+.footer-column li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-column li a {
+  display: inline-block;
+
+  color: #d7c8ca;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-column li a:hover {
+  color: #e85d75;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+
+  margin-bottom: 18px;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-item > span {
+  flex-shrink: 0;
+
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: rgba(232, 93, 117, 0.12);
+
+  color: #e85d75;
+
+  font-size: 13px;
+}
+
+.contact-item p {
+  min-width: 0;
+
+  margin: 0;
+
+  color: #d7c8ca;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================
+   NEWSLETTER
+========================================= */
+
+.footer-newsletter {
+  width: 100%;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.newsletter-content {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 35px 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 35px;
+
+  box-sizing: border-box;
+}
+
+.newsletter-content > div:first-child {
+  min-width: 0;
+}
+
+.newsletter-content h3 {
+  margin: 0 0 7px;
+
+  color: #fff;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+.newsletter-content p {
+  margin: 0;
+
+  color: #cdbfc1;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   NEWSLETTER FORM
+========================================= */
+
+.newsletter-form {
+  width: min(100%, 500px);
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  min-width: 0;
+
+  flex-shrink: 1;
+}
+
+.newsletter-form input {
+  min-width: 0;
+
+  width: 100%;
+
+  padding: 13px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 9px;
+
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: #fff;
+
+  font-size: 13px;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.newsletter-form input::placeholder {
+  color: #aaa;
+}
+
+.newsletter-form input:focus {
+  border-color: #e85d75;
+
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.newsletter-form button {
+  flex-shrink: 0;
+
+  padding: 13px 22px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #e85d75;
+
+  color: #fff;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.newsletter-form button:hover {
+  background: #d94d67;
+
+  box-shadow:
+    0 7px 20px rgba(232, 93, 117, 0.25);
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 22px 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  box-sizing: border-box;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #a99b9e;
+
+  font-size: 12px;
+}
+
+.made-with {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  text-align: center;
+}
+
+.made-with span {
+  display: inline-flex;
+
+  color: #e85d75;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   LAPTOP
+   992px - 1199px
+========================================= */
+
+@media (max-width: 1199px) {
+
+  .footer-container {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    gap: 40px;
+  }
+
+  .newsletter-content {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    gap: 25px;
+  }
+
+  .footer-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+   768px - 991px
+========================================= */
+
+@media (max-width: 991px) {
+
+  .footer-container {
+    grid-template-columns:
+      1fr
+      1fr;
+
+    gap: 45px 35px;
+
+    padding: 60px 20px 45px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .newsletter-content {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 25px;
+
+    padding: 35px 20px;
+  }
+
+  .newsletter-form {
+    width: 100%;
+
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   480px - 767px
+========================================= */
+
+@media (max-width: 767px) {
+
+  .footer {
+    margin-top: 50px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    padding: 50px 18px 40px;
+  }
+
+  .footer-column h3 {
+    margin-bottom: 18px;
+
+    font-size: 16px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .footer-description {
+    max-width: 500px;
+
+    margin-top: 17px;
+
+    font-size: 13px;
+  }
+
+  .footer-logo {
+    font-size: 25px;
+  }
+
+  .footer-logo > span:first-child {
+    width: 42px;
+    height: 42px;
+  }
+
+  .newsletter-content {
+    padding: 30px 18px;
+
+    gap: 22px;
+  }
+
+  .newsletter-content h3 {
+    font-size: 18px;
+  }
+
+  .newsletter-content p {
+    font-size: 13px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: 10px;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+
+    min-height: 44px;
+
+    box-sizing: border-box;
+  }
+
+  .footer-bottom {
+    padding: 20px 18px;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 8px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   360px - 479px
+========================================= */
+
+@media (max-width: 479px) {
+
+  .footer {
+    margin-top: 40px;
+  }
+
+  .footer-container {
+    padding: 45px 15px 35px;
+
+    gap: 32px;
+  }
+
+  .footer-logo {
+    font-size: 23px;
+
+    gap: 8px;
+  }
+
+  .footer-logo > span:first-child {
+    width: 39px;
+    height: 39px;
+
+    font-size: 18px;
+  }
+
+  .footer-description {
+    font-size: 12.5px;
+
+    line-height: 1.75;
+  }
+
+  .footer-social {
+    gap: 8px;
+  }
+
+  .footer-social a {
+    width: 35px;
+    height: 35px;
+
+    font-size: 13px;
+  }
+
+  .footer-column li a {
+    font-size: 13px;
+  }
+
+  .contact-item {
+    gap: 10px;
+  }
+
+  .contact-item > span {
+    width: 32px;
+    height: 32px;
+  }
+
+  .contact-item p {
+    font-size: 12.5px;
+  }
+
+  .newsletter-content {
+    padding: 28px 15px;
+  }
+
+  .newsletter-content h3 {
+    font-size: 17px;
+  }
+
+  .newsletter-content p {
+    font-size: 12.5px;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    min-height: 43px;
+
+    padding: 12px 14px;
+  }
+
+  .footer-bottom {
+    padding: 18px 15px;
+  }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+   Below 360px
+========================================= */
+
+@media (max-width: 359px) {
+
+  .footer-container {
+    padding-left: 12px;
+    padding-right: 12px;
+
+    gap: 30px;
+  }
+
+  .footer-logo {
+    font-size: 21px;
+
+    gap: 7px;
+  }
+
+  .footer-logo > span:first-child {
+    width: 36px;
+    height: 36px;
+
+    font-size: 17px;
+  }
+
+  .footer-description {
+    font-size: 12px;
+  }
+
+  .footer-social a {
+    width: 33px;
+    height: 33px;
+
+    font-size: 12px;
+  }
+
+  .footer-column h3 {
+    font-size: 15px;
+  }
+
+  .footer-column li {
+    margin-bottom: 11px;
+  }
+
+  .footer-column li a {
+    font-size: 12.5px;
+  }
+
+  .contact-item {
+    gap: 8px;
+  }
+
+  .contact-item > span {
+    width: 30px;
+    height: 30px;
+
+    font-size: 12px;
+  }
+
+  .contact-item p {
+    font-size: 12px;
+  }
+
+  .newsletter-content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .newsletter-content h3 {
+    font-size: 16px;
+  }
+
+  .newsletter-content p {
+    font-size: 12px;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .footer-bottom p {
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+.footer a:focus-visible,
+.footer button:focus-visible,
+.footer input:focus-visible {
+  outline: 2px solid #e85d75;
+
+  outline-offset: 3px;
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .footer *,
+  .footer *::before,
+  .footer *::after {
+
+    animation-duration: 0.01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.contact-item {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-item p {
+  margin: 0;
+}
+
+.contact-item span {
+  flex-shrink: 0;
+}
